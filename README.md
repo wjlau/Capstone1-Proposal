@@ -12,4 +12,4 @@
 3. ### Fatalities Due to Vehicle Collisions
 	*  Are accidents in the winter more dangerous (more fatalies) compared to the summer? 
 	* [Motor Vehicle Collisions - Vehicles](https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Vehicles/bm4k-52h4)
-	* [Moto Vehicle Collisions - Crashes](https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95)# Capstone1-Proposal
+	* [Moto Vehicle Collisions - Crashes](https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95)
