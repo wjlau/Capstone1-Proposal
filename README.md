@@ -14,15 +14,15 @@ First I explored the idea of whether or not home court advantage was real.
 * H<sub>A</sub>: There is such a thing as home court advantage. p > 0.5
 
 
-Then I repeated the same test but specifically for the New York Knicks and the Brooklyn Nets.
+Then I looked at specifically the New York Knicks and the Brooklyn Nets.
 
 Knicks: 
-* H<sub>0</sub>: Knicks have no home court advantage. p = 0.5
-* H<sub>A</sub>: Knicks have a home court advantage. p > 0.5
+* H<sub>0</sub>: Knicks have no home court advantage. Home win rate = Away win rate
+* H<sub>A</sub>: Knicks have a home court advantage. Home win rate > Away win rate
 
 Nets:
-* H<sub>0</sub>: Nets have no home court advantage. p = 0.5
-* H<sub>A</sub>: Nets have a home court advantage. p > 0.5
+* H<sub>0</sub>: Nets have no home court advantage. Home win rate = Away win rate
+* H<sub>A</sub>: Nets have a home court advantage. Home win rate > Away win rate
 
 ## Data
 
@@ -45,8 +45,7 @@ I then created a histogram of number of wins grouped by season. At this point it
 ## Results 
 
 Is home court advantage real?
-
-Using a one sample t-test of population proportions: 
+Looking at all NBA teams I was able to use a one sample t-test of population proportions with the null hypothesis being that home teams win 50% of the games. Since we are looking at all NBA teams, this will account for home win rate vs away win rate. If there is no home court advantage, home win rate = away win rate which is in essence, equivalent to the null hypothesis. 
 * p = 0.5 
 * significance level = 0.05
 * n = 12873 games 
@@ -55,27 +54,23 @@ Reject the null
 
 Does the Knicks have a home cour† advantage?
 
-Using a one sample t-test of population proportions: 
-* p = 0.5 
+Here, we are unable to use a one sample t-test like the above - that is because if we are only focusing on home games - it will not account for the win rate the team's away games. Using a two sample test, we compare home win rate vs away win rate. 
+* null: there is no difference in the average home win rate compared to away win rate
+* alternative: there is a difference in the average home win rate compared to away win rate (home win rate > away win rate)
 * significance level = 0.05
-* n = 822 games 
-* test statistic = 193 home games won 
-Fail to reject the null
+Reject the null
 
 Does the Nets have a home court advantage?
 
-Using a one sample t-test of population proportions: 
-* p = 0.5 
+Using a two sample test:
+* null: there is no difference in the average home win rate compared to away win rate
+* alternative: there is a difference in the average home win rate compared to away win rate (home win rate > away win rate)
 * significance level = 0.05
-* n = 601 games 
-* test statistic = 339 home games won 
-Fail to reject the null
-
-For all three tests I used a one sample t-test, however I could have also used a two sample t-test of population proportions (i.e. there is no difference between proportion of games won by home teams vs proportion of games won by away teams).
+Reject the null
 
 ## Conclusions
 
-While home court advantage is real, not all teams have a home court advantage. 
+There is such a thing as home court advantage. 
 
 ## Looking Forward 
 
