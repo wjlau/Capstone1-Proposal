@@ -50,15 +50,15 @@ Looking at all NBA teams I was able to use a one sample t-test of population pro
 * significance level = 0.05
 * n = 12873 games 
 * test statistic = 7626 home games won 
-Reject the null
+* Reject the null
 
 Does the Knicks have a home cour† advantage?
 
-Here, we are unable to use a one sample t-test like the above - that is because if we are only focusing on home games - it will not account for the win rate the team's away games. Using a two sample test, we compare home win rate vs away win rate. 
+Here, we are unable to use a one sample t-test like the above - that is because if we are only focusing on home games - it will not account for the win rate for the team's away games. Using a two sample test, we compare home win rate vs away win rate. 
 * null: there is no difference in the average home win rate compared to away win rate
 * alternative: there is a difference in the average home win rate compared to away win rate (home win rate > away win rate)
 * significance level = 0.05
-Reject the null
+* Reject the null
 
 Does the Nets have a home court advantage?
 
@@ -66,7 +66,7 @@ Using a two sample test:
 * null: there is no difference in the average home win rate compared to away win rate
 * alternative: there is a difference in the average home win rate compared to away win rate (home win rate > away win rate)
 * significance level = 0.05
-Reject the null
+* Reject the null
 
 ## Conclusions
 
